@@ -23,5 +23,8 @@
         "gulp-uglify": "^3.0.0",
         "scrollreveal": "4.0.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.2.0",
+        "bootstrap": "^4.1.3"
+    }
 }

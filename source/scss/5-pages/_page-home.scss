@@ -1,0 +1,53 @@
+.header {
+  background: #44c4fd;
+  height: 100vh;
+
+  &__nav {
+    padding-top: 70px;
+    padding-top: 50px;
+  }
+
+  &__hero {
+    padding-top: 220px;
+  }
+}
+
+.nav {
+  &__link {
+
+  }
+}
+
+.hero {
+  text-align: center;
+
+  &__title {
+    color: $basic_light;
+    font-size: 50px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+  }
+  &__link {
+    color: $basic_light;
+    font-size: 24px;
+  }
+}
+
+.blurb {
+  padding: 160px 0 150px;
+
+  &__title {
+    color: $accent;
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+  &__desc {
+    color: $basic_dark;
+    line-height: 24px;
+  }
+}

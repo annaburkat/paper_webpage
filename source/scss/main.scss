@@ -1,6 +1,5 @@
 // This is the single file output by sass. It is intended to ONLY @import other files.
 
-
 // 1 - TOOLS
 @import '1-tools/normalize';
 
@@ -23,9 +22,5 @@
 @import '4-layout/nav';
 
 
-// 5 - MODULES
-@import '5-modules/flex-video';
-
-
-// 6 - PAGES
-@import '6-pages/page-home';
+// 5 - PAGES
+@import '5-pages/page-home';

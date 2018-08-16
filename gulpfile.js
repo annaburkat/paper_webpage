@@ -14,7 +14,6 @@ var autoprefixer = require('gulp-autoprefixer'),
     images = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
-
 // paths
 var styleSrc = 'source/scss/**/*.scss',
     styleDest = 'build/assets/css/',
@@ -47,6 +46,22 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('build/assets/css'));
 });
 
+// Compile bootstrap SCSS into CSS & auto-inject into browsers
+gulp.task('sass-bootstrap', function() {
+    return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
+        .pipe(sass())
+        .pipe(gulp.dest("build/assets/css"))
+        .pipe(browserSync.stream());
+});
+
+// Move the bootstrap file into our /src/js folder
+gulp.task('js-bootstrap', function() {
+    return gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(gulp.dest("build/assets/js"))
+        .pipe(browserSync.stream());
+});
+
+
 gulp.task('images', function() {
     gulp.src('source/img/*')
         .pipe(images())
@@ -78,7 +93,6 @@ gulp.task('vendors', function() {
 
 // Watch for changes
 gulp.task('watch', function(){
-
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -96,4 +110,4 @@ gulp.task('watch', function(){
 
 
 // use default task to launch Browsersync and watch JS files
-gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch'], function () {});
+gulp.task('default', [ 'sass', 'scripts', 'vendors', 'watch', 'sass-bootstrap', 'js-bootstrap'], function () {});

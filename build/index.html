@@ -5,48 +5,104 @@
   <title>Paper Webpage</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>Your menu</li>
-      </ul>
+  <header class="header">
+    <nav class="header__nav nav navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand nav__logo" href="#">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+
+        <button class="navbar-toggler nav__hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav__menu" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active nav__el">
+              <a class="nav-link nav__link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item nav__el">
+              <a class="nav-link nav__link" href="#">Featured Work</a>
+            </li>
+            <li class="nav-item nav__el">
+              <a class="nav-link nav__link" href="#">Privacy</a>
+            </li>
+            <li class="nav-item nav__el">
+              <a class="nav-link nav__link" href="#">About us</a>
+            </li>
+            <li class="nav-item nav__el">
+              <a class="nav-link nav__link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item nav__el">
+              <a class="nav-link nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <div class="header__hero hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="hero__title">We make beautiful papers and books that you'll love to have.</h1>
+            <a class="hero__link" href="#">see our papers</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section>
+  <!-- Section blurb -->
+  <section class="blurb">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="blurb__content">
+            <h3 class="blurb__title"><i class="fas fa-heart"></i> Fun Papers</h3>
+            <p class="blurb__desc">Voluptatema accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. totam rem aperiam, eaque ipsa quae.</p>
+          </div>
+          <h3></h3>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="blurb__content">
+            <h3 class="blurb__title"><i class="fas fa-comments"></i> Talk Papers</h3>
+            <p class="blurb__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="blurb__content">
+            <h3 class="blurb__title"><i class="fas fa-heart"></i>Creative Papers</h3>
+            <p class="blurb__desc">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="blurb__content">
+            <h3 class="blurb__title"><i class="fas fa-heart"></i> Bussines Papers</h3>
+            <p class="blurb__desc">Voluptatema accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Section blurb -->
 
-    <article>
-      <header>
-        <h2>Article title</h2>
-        <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-      </header>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </article>
 
-    <article>
-      <header>
-        <h2>Article title</h2>
-        <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-      </header>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </article>
+  <!-- Section slider -->
+  <section class="slider">
 
   </section>
-
-  <aside>
-    <h2>About section</h2>
-    <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-  </aside>
-
-  <footer>
-    <p>Copyright 2009 Your name</p>
-  </footer>
+  <!-- END Section slider -->
 
   <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
 
