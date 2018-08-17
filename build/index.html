@@ -18,31 +18,33 @@
           <img src="assets/img/logo.png" alt="">
         </a>
 
-        <button class="navbar-toggler menu__hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="menu__hamburger hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger__icon navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
         </button>
 
-        <div class="collapse navbar-collapse menu__list" id="navbarResponsive">
+        <div class="menu__list collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active menu__el">
-              <a class="nav-link menu__link" href="#">Home
+            <li class="menu__el nav-item active">
+              <a class="menu__link nav-link" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item menu__el">
-              <a class="nav-link menu__link" href="#">Featured Work</a>
+            <li class="menu__el nav-item">
+              <a class="menu__link nav-link" href="#">Featured Work</a>
             </li>
-            <li class="nav-item menu__el">
-              <a class="nav-link menu__link" href="#">Privacy</a>
+            <li class="menu__el nav-item">
+              <a class="menu__link nav-link" href="#">Privacy</a>
             </li>
-            <li class="nav-item menu__el">
-              <a class="nav-link menu__link" href="#">About us</a>
+            <li class="menu__el nav-item">
+              <a class="menu__link nav-link" href="#">About us</a>
             </li>
-            <li class="nav-item menu__el">
-              <a class="nav-link menu__link" href="#">FAQ</a>
+            <li class="menu__el nav-item">
+              <a class="menu__link nav-link" href="#">FAQ</a>
             </li>
-            <li class="nav-item menu__el">
-              <a class="nav-link menu__link" href="#">Contact</a>
+            <li class="menu__el nav-item">
+              <a class="menu__link nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -51,9 +53,12 @@
     <div class="header__hero hero">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12">
             <h1 class="hero__title">We make beautiful papers and books that you'll love to have.</h1>
             <a class="hero__link" href="#">see our papers</a>
+          </div>
+          <div class="col-12">
+            <img class="hero__img" src="assets/img/pen.png" alt="">
           </div>
         </div>
       </div>
@@ -141,51 +146,56 @@
   <!--  Section information -->
   <section class="inf-tab">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <ul class="inf-tab__list nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="inf-tab__el nav-item">
-              <a class="inf-tab__link nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
-            </li>
-            <li class="inf-tab__el nav-item">
-              <a class="inf-tab__link nav-link" id="papers-tab" data-toggle="tab" href="#papers" role="tab" aria-controls="papers" aria-selected="false">Papers</a>
-            </li>
-            <li class="inf-tab__el nav-item">
-              <a class="inf-tab__link nav-link" id="privacy-tab" data-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
-            </li>
-          </ul>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="inf-tab__wrapper">
 
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-              <p>
-                1. Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod
-                tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra
-                nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben 2. Quisque et laoreet tellus. Morbi ut lorem interdum, mollis
-                lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus,
-                nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis
-                sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra. 3. Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus
-                eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus,
-                nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis
-                sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra. 4. Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus
-                eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus,
-                nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis
-                sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra.
-              </p>
+            <ul class="inf-tab__list nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="inf-tab__el nav-item">
+                <a class="button-inf" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+              </li>
+              <li class="inf-tab__el nav-item">
+                <a class="button-inf active" id="papers-tab" data-toggle="tab" href="#papers" role="tab" aria-controls="papers" aria-selected="false">Papers</a>
+              </li>
+              <li class="inf-tab__el nav-item">
+                <a class="button-inf" id="privacy-tab" data-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+              </li>
+            </ul>
+
+            <div class="inf-tab__content inf-cont tab-content" id="myTabContent">
+              <div class="inf-cont__box tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <div class="inf-cont__content">
+                  <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
+                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
+                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben</p>
+                  <p><span class="inf-cont__number">2. </span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
+                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
+                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus
+                    viverra.</p>
+                  <p><span class="inf-cont__number">3.</span> Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
+                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
+                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus
+                    viverra.</p>
+                  <p><span class="inf-cont__number">4.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id
+                  viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices
+                  justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat
+                  dapibus viverra.</p>
+                </div></div>
+              <div class="inf-cont__box tab-pane fade show active" id="papers" role="tabpanel" aria-labelledby="papers-tab">
+                <img class="inf-cont__img" src="assets/img/paper_icon.png" alt="">
+                <p class="inf-cont__content inf-cont__content--bigger">Paper is a thin material produced by pressing together moist fibers, typically cellulose pulp derived from wood, rags or grasses, and drying them into flexible sheets.
+                </p>
+              </div>
+              <div class="inf-cont__box tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+                <p class="inf-cont__content text-justify">Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate
+                  euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a
+                  pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra. </p>
+                <p class="inf-cont__content text-justify">Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate
+                  euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a
+                  pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra.</p>
+              </div>
             </div>
-            <div class="tab-pane fade" id="papers" role="tabpanel" aria-labelledby="papers-tab">
-              <img src="asetts/img/paper_icon.png" alt="">
-              <p>
-                Paper is a thin material produced by pressing together moist fibers, typically cellulose pulp derived from wood, rags or grasses, and drying them into flexible sheets.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
-              <p>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate
-                euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra
-                nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra. Quisque et laoreet
-                tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod tortor.
-                Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit
-                amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra.</p>
-            </div>
+
           </div>
         </div>
       </div>
@@ -205,10 +215,10 @@
         <div class="col-12 col-md-10">
           <form class="getintouch__form contact">
             <div class="form-row">
-              <div class="col">
+              <div class="col-12 col-md-6">
                 <input type="text" class="contact__input form-control" placeholder="Name">
               </div>
-              <div class="col">
+              <div class="col-12 col-md-6">
                 <input type="text" class="contact__input form-control" placeholder="Email">
               </div>
             </div>

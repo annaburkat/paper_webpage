@@ -1,1 +1,37 @@
+.button-inf {
+  background: transparent;
+  border: 3px solid $basic_light_trans;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  height: 39px;
+  line-height: 32px;
+  width: 90px;
+  /*Text Styles*/
+  color: $basic_light_trans;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
 
+  &:active,
+  &:focus,
+  &:hover {
+    color: $basic_light;
+    border-color: $basic_light;
+    text-decoration: none;
+  }
+}
+
+.button-inf.active {
+  color: $basic_light;
+  border-color: $basic_light;
+}
+
+@media (min-width: 768px) {
+  .button-inf {
+    width: 130px;
+  }
+
+}
