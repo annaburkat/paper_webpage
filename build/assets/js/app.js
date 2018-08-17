@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+if(document.getElementById("map"))var myLatlng={lat:45.802982,lng:16.004666},map=new google.maps.Map(document.getElementById("map"),{zoom:16,center:myLatlng}),marker=new google.maps.Marker({position:myLatlng,map:map});

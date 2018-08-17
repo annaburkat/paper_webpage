@@ -242,6 +242,11 @@ summary {
   color: #FFF;
   border-color: #FFF; }
 
+.btn-social {
+  font-size: 25px;
+  color: #c8c8c8;
+  padding-right: 15px; }
+
 @media (min-width: 768px) {
   .button-inf {
     width: 130px; } }
@@ -344,8 +349,13 @@ body {
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 0.6); }
   .inf-tab__list {
+    background-color: #005e89;
     border-bottom: none;
-    margin-bottom: 40px; }
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
   .inf-tab__el {
     margin: 0 10px; }
   .inf-tab__content {
@@ -362,7 +372,7 @@ body {
   color: #FFF;
   font-size: 14px;
   line-height: 1.7; }
-  .inf-cont__content--bigger {
+  .inf-cont__content--paper {
     font-size: 20px;
     line-height: 1.5; }
 
@@ -370,29 +380,58 @@ body {
   font-size: 16px;
   margin-right: 5px; }
 
-.getintouch {
+.contact {
   background-color: #fafafa;
   padding-top: 50px;
   text-align: center; }
-  .getintouch__title {
+  .contact__title {
     color: #005e89;
     font-size: 32px;
+    font-weight: bold;
     margin-bottom: 40px; }
-  .getintouch__text {
+  .contact__text {
     color: #727272;
     text-align: justify; }
-  .getintouch__form {
+  .contact__form {
     padding: 40px 0; }
+  .contact__map {
+    padding-top: 50px;
+    height: 230px; }
 
-.contact__input, .contact__textarea {
+.form__input, .form__textarea {
   background-color: #fafafa;
   border: none;
   border-bottom: 1px solid #727272;
   border-radius: 0;
   font-size: 16px;
-  height: auto;
-  line-height: 38px;
-  padding-left: 0; }
+  height: calc(2.25rem + 2px) !important;
+  padding-left: 0;
+  margin: 0 auto 15px;
+  max-width: 90%; }
+  .form__input:focus, .form__textarea:focus {
+    color: #727272;
+    background-color: #fafafa;
+    border-bottom: 1px solid #727272;
+    outline: 0;
+    box-shadow: none; }
+
+.form__social-icons {
+  margin-top: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start; }
+
+.form__submit {
+  margin-top: 15px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end; }
+  .form__submit button {
+    background: transparent;
+    border: none;
+    vertical-align: middle; }
+    .form__submit button img {
+      padding-right: 8px; }
 
 .footer {
   padding: 30px 0; }
@@ -411,7 +450,7 @@ body {
     padding: 40px 0; }
   .inf-cont__content {
     font-size: 16px; }
-    .inf-cont__content--bigger {
+    .inf-cont__content--paper {
       font-size: 25px;
       line-height: 36px; }
   .inf-cont__number {
@@ -428,7 +467,19 @@ body {
     padding-top: 80px;
     padding-bottom: 60px; }
     .inf-tab__el {
-      margin: 0 30px; } }
+      margin: 0 30px; }
+  .form__input {
+    width: 95%;
+    margin: 0; }
+    .form__input[type="email"] {
+      float: right; }
+  .form__textarea {
+    max-width: 100%;
+    margin-top: 35px; }
+  .form__social-icons {
+    margin-left: 0; }
+  .form__submit {
+    margin-right: 0; } }
 
 @media (min-width: 992px) {
   .header {
@@ -461,4 +512,6 @@ body {
 
 @media (min-width: 1200px) {
   .header__hero {
-    padding-top: 8%; } }
+    padding-top: 8%; }
+  .inf-cont__content--paper {
+    max-width: 95%; } }

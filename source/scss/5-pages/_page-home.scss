@@ -135,8 +135,13 @@
   }
 
   &__list {
+    background-color: $accent;
     border-bottom: none;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   &__el {
@@ -155,7 +160,7 @@
   }
 
   &__img {
-        padding: 20px 0 30px;
+    padding: 20px 0 30px;
   }
 
   &__content {
@@ -163,7 +168,7 @@
     font-size: 14px;
     line-height: 1.7;
 
-    &--bigger {
+    &--paper {
       font-size: 20px;
       line-height: 1.5;
     }
@@ -175,7 +180,7 @@
   }
 }
 
-.getintouch {
+.contact {
   background-color: #fafafa;
   padding-top: 50px;
   text-align: center;
@@ -183,6 +188,7 @@
   &__title {
     color: $accent;
     font-size: 32px;
+    font-weight: bold;
     margin-bottom: 40px;
   }
 
@@ -194,9 +200,14 @@
   &__form {
     padding: 40px 0;
   }
+
+  &__map {
+    padding-top: 50px;
+    height: 230px;
+  }
 }
 
-.contact {
+.form {
   &__input,
   &__textarea {
     background-color: #fafafa;
@@ -204,11 +215,50 @@
     border-bottom: 1px solid $basic_dark;
     border-radius: 0;
     font-size: 16px;
-    height: auto;
-    line-height: 38px;
+    height: calc(2.25rem + 2px) !important;
     padding-left: 0;
+    margin: 0 auto 15px;
+    max-width: 90%;
+
+    &:focus {
+      color: $basic_dark;
+      background-color: #fafafa;
+      border-bottom: 1px solid $basic_dark;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  &__social-icons {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__submit {
+    margin-top: 15px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      img {
+        padding-right: 8px;
+      }
+      background: transparent;
+      border: none;
+      vertical-align: middle;
+    }
   }
 }
+// &__link {
+//   padding-right: 15px;
+//   i {
+//     font-size: 22px;
+//     color: #c8c8c8;
+//   }
+// }
 
 .footer {
   padding: 30px 0;
@@ -230,17 +280,17 @@
     }
   }
 }
-
 // Small devices (landscape phones, 576px and up - sm)
 @media (min-width: 576px) {
   .inf-cont {
     &__img {
       padding: 40px 0;
     }
+
     &__content {
       font-size: 16px;
 
-      &--bigger {
+      &--paper {
         font-size: 25px;
         line-height: 36px;
       }
@@ -249,10 +299,8 @@
     &__number {
       font-size: 20px;
     }
-
   }
 }
-
 // Medium devices (tablets, 768px and up - md)
 @media (min-width: 768px) {
   .blurb {
@@ -270,8 +318,33 @@
   .inf-tab {
     padding-top: 80px;
     padding-bottom: 60px;
+
     &__el {
       margin: 0 30px;
+    }
+  }
+
+  .form {
+    &__input {
+      width: 95%;
+      margin: 0;
+
+      &[type="email"] {
+        float: right;
+      }
+    }
+
+    &__textarea {
+      max-width: 100%;
+      margin-top: 35px;
+    }
+
+    &__social-icons {
+      margin-left: 0;
+    }
+
+    &__submit {
+      margin-right: 0;
     }
   }
 }
@@ -337,6 +410,14 @@
   .header {
     &__hero {
       padding-top: 8%;
+    }
+  }
+
+  .inf-cont {
+    &__content {
+      &--paper {
+        max-width: 95%;
+      }
     }
   }
 }

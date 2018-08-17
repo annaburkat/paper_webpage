@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/main.min.css" />
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4mk0xIdqi4l47m-chyoIfATpoX-5Kd1Y&callback=initMap"></script>
+
 </head>
 
 <body>
@@ -165,25 +167,28 @@
             <div class="inf-tab__content inf-cont tab-content" id="myTabContent">
               <div class="inf-cont__box tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                 <div class="inf-cont__content">
-                  <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
-                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
-                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben</p>
-                  <p><span class="inf-cont__number">2. </span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
-                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
-                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus
-                    viverra.</p>
-                  <p><span class="inf-cont__number">3.</span> Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra
-                    interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices justo
-                    at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus
-                    viverra.</p>
-                  <p><span class="inf-cont__number">4.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id
-                  viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis. Donec ultricies ultrices
-                  justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat
-                  dapibus viverra.</p>
-                </div></div>
+                  <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
+                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
+                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben</p>
+                  <p><span class="inf-cont__number">2. </span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
+                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
+                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
+                    nunc. Phasellus feugiat dapibus viverra.
+                  </p>
+                  <p><span class="inf-cont__number">3.</span> Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
+                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
+                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
+                    nunc. Phasellus feugiat dapibus viverra.
+                  </p>
+                  <p><span class="inf-cont__number">4.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
+                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
+                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
+                    nunc. Phasellus feugiat dapibus viverra.</p>
+                </div>
+              </div>
               <div class="inf-cont__box tab-pane fade show active" id="papers" role="tabpanel" aria-labelledby="papers-tab">
                 <img class="inf-cont__img" src="assets/img/paper_icon.png" alt="">
-                <p class="inf-cont__content inf-cont__content--bigger">Paper is a thin material produced by pressing together moist fibers, typically cellulose pulp derived from wood, rags or grasses, and drying them into flexible sheets.
+                <p class="inf-cont__content inf-cont__content--paper">Paper is a thin material produced by pressing together moist fibers, typically cellulose pulp derived from wood, rags or grasses, and drying them into flexible sheets.
                 </p>
               </div>
               <div class="inf-cont__box tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
@@ -204,36 +209,76 @@
   <!-- END Section information -->
 
   <!-- Section contact -->
-  <section class="getintouch">
+  <section class="contact">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-10">
-          <h4 class="getintouch__title">Get in touch.</h4>
-          <p class="getintouch__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam elit, posuere eget tincidunt aliquam, sodales quis neque. Sed dignissim quam libero, ut tempus justo lacinia vel. Proin eget ipsum vitae tellus hendrerit varius eu at velit. Lorem
+        <div class="col-12 col-md-10 col-xl-8">
+          <h4 class="contact__title">Get in touch.</h4>
+          <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam elit, posuere eget tincidunt aliquam, sodales quis neque. Sed dignissim quam libero, ut tempus justo lacinia vel. Proin eget ipsum vitae tellus hendrerit varius eu at velit. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue ac libero commodo venenatis eget eu lorem. Aenean non congue quam. Nam massa felis, tincidunt eget elit sed.</p>
         </div>
-        <div class="col-12 col-md-10">
-          <form class="getintouch__form contact">
+        <div class="col-12 col-md-10 col-xl-8">
+          <form class="contact__form form">
             <div class="form-row">
               <div class="col-12 col-md-6">
-                <input type="text" class="contact__input form-control" placeholder="Name">
+                <input type="text" class="form__input form-control" placeholder="Name">
               </div>
               <div class="col-12 col-md-6">
-                <input type="text" class="contact__input form-control" placeholder="Email">
+                <input type="email" class="form__input form-control" placeholder="Email">
               </div>
             </div>
             <div class="form-row">
               <div class="col">
-                <textarea class="contact__textarea form-control" placeholder="Message"></textarea>
+                <textarea class="form__textarea form-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-12 col-sm-8">
+                <div class="form__social-icons">
+                  <a class="btn-social btn-social--twitter" href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a class="btn-social btn-social--fb" href="#">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                  <a class="btn-social btn-social--behance" href="#">
+                    <i class="fab fa-behance"></i>
+                  </a>
+                  <a class="btn-social btn-social--dribbble" href="#">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a class="btn-social btn-social--google" href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="form__submit">
+                  <button class="btn" type="submit">
+                    <img src="assets/img/send_icon.png" alt="">
+                   Send message</button>
+                </div>
               </div>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="getinouch__map">
+    <div class="contact__map" id="map"></div>
+    <!-- <script type="text/javascript">
+      var map;
 
-    </div>
+      function initMap() {
+        console.log('dsds');
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {
+            lat: -34.397,
+            lng: 150.644
+          },
+          zoom: 8
+        });
+      };
+    </script> -->
   </section>
   <!-- END Section contact -->
 
@@ -244,7 +289,7 @@
           <p class="footer__text footer__text--link">&#xa9; 2014 <a href="#">PAPERS</a>. All Rights Reserved.</p>
         </div>
         <div class="col-6">
-          <p class="footer__text footer__text--right">© 2014 <a href="#">PAPERS</a>. All Rights Reserved.</p>
+          <p class="footer__text footer__text--right">Designed by FarShore.</p>
         </div>
       </div>
     </div>

@@ -29,9 +29,21 @@
   border-color: $basic_light;
 }
 
+.btn-social {
+  font-size: 25px;
+  color: #c8c8c8;
+  padding-right: 15px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    
+  }
+}
+
+
 @media (min-width: 768px) {
   .button-inf {
     width: 130px;
   }
-
 }
