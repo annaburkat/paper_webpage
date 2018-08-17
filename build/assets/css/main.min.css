@@ -217,50 +217,6 @@ progress {
 summary {
   display: list-item; }
 
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  padding: 20px 60px;
-  color: black;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: all 0.2s ease; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    outline: 0;
-    transform: scale(1.01);
-    transform: translateY(3px); }
-
 ::selection {
   background: #FFF498; }
 
@@ -290,6 +246,15 @@ body {
   .header__hero {
     padding-top: 220px; }
 
+.menu__el {
+  font-size: 18px;
+  line-height: 32px; }
+
+.menu__link {
+  color: #FFF;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
 .hero {
   text-align: center; }
   .hero__title {
@@ -302,14 +267,61 @@ body {
     font-size: 24px; }
 
 .blurb {
-  padding: 160px 0 150px; }
+  padding: 50px 0; }
+  .blurb__content {
+    padding: 15px 0; }
   .blurb__title {
     color: #005e89;
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    text-align: center;
     text-transform: capitalize; }
     .blurb__title i {
       margin-right: 15px; }
   .blurb__desc {
     color: #727272;
     line-height: 24px; }
+
+.inf-tab {
+  background-color: #005e89;
+  padding: 80px 0; }
+  .inf-tab__list {
+    border-bottom: none; }
+  .inf-tab__el {
+    height: 40px;
+    width: 130px; }
+
+.getintouch {
+  background-color: #fafafa;
+  padding-top: 50px;
+  text-align: center; }
+  .getintouch__title {
+    color: #005e89;
+    font-size: 32px;
+    margin-bottom: 40px; }
+  .getintouch__text {
+    color: #727272;
+    text-align: justify; }
+  .getintouch__form {
+    padding: 40px 0; }
+
+.contact__input, .contact__textarea {
+  background-color: #fafafa;
+  border: none;
+  border-bottom: 1px solid #727272;
+  border-radius: 0;
+  font-size: 16px;
+  height: auto;
+  line-height: 38px;
+  padding-left: 0; }
+
+.footer {
+  padding: 30px 0; }
+  .footer__text {
+    font-size: 13px;
+    line-height: 1.2; }
+    .footer__text--left a {
+      color: #1094d1; }
+    .footer__text--right {
+      font-weight: bold;
+      text-align: right; }

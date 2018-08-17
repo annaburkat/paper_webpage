@@ -12,9 +12,16 @@
   }
 }
 
-.nav {
-  &__link {
+.menu {
+  &__el {
+    font-size: 18px;
+    line-height: 32px;
+  }
 
+  &__link {
+    color: $basic_light;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -27,6 +34,7 @@
     max-width: 700px;
     margin: 0 auto 25px;
   }
+
   &__link {
     color: $basic_light;
     font-size: 24px;
@@ -34,20 +42,142 @@
 }
 
 .blurb {
-  padding: 160px 0 150px;
+  padding: 50px 0;
+
+  &__content {
+    padding: 15px 0;
+  }
 
   &__title {
     color: $accent;
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    text-align: center;
     text-transform: capitalize;
 
     i {
       margin-right: 15px;
     }
   }
+
   &__desc {
     color: $basic_dark;
     line-height: 24px;
   }
 }
+
+.inf-tab {
+  background-color: $accent;
+  padding: 80px 0;
+
+  &__list {
+    border-bottom: none;
+  }
+
+  &__el {
+    height: 40px;
+    width: 130px;
+  }
+}
+
+.getintouch {
+  background-color: #fafafa;
+  padding-top: 50px;
+  text-align: center;
+
+  &__title {
+    color: $accent;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $basic_dark;
+    text-align: justify;
+  }
+
+  &__form {
+    padding: 40px 0;
+  }
+
+}
+
+.contact {
+
+  &__input,
+  &__textarea {
+    background-color: #fafafa;
+    border: none;
+    border-bottom: 1px solid $basic_dark;
+    border-radius: 0;
+    font-size: 16px;
+    height: auto;
+    line-height: 38px;
+    padding-left: 0;
+  }
+}
+
+.footer{
+  padding: 30px 0;
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.2;
+
+    &--left {
+      a {
+        color: #1094d1;
+      }
+    }
+
+    &--right {
+      font-weight: bold;
+      text-align: right;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up - sm)
+@media (min-width: 576px) {
+
+}
+// Medium devices (tablets, 768px and up - md)
+@media (min-width: 768px) {
+
+}
+// Large devices (desktops, 992px and up - lg)
+@media (min-width: 992px) {
+
+}
+// Extra large devices (large desktops, 1200px and up - xl)
+@media (min-width: 1200px) {
+
+}
+//
+// .blurb {
+//   padding: 160px 0 150px;
+//
+//   &__title {
+//     color: $accent;
+//     font-size: 22px;
+//     margin-bottom: 30px;
+//     text-transform: capitalize;
+//
+//     i {
+//       margin-right: 15px;
+//     }
+//   }
+//   &__desc {
+//     color: $basic_dark;
+//     line-height: 24px;
+//   }
+// }
