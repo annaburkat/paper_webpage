@@ -11,7 +11,6 @@ var autoprefixer = require('gulp-autoprefixer'),
   rename = require('gulp-rename'),
   uglify = require('gulp-uglify'),
   csso = require('gulp-csso'),
-  images = require('gulp-imagemin'),
   clean = require('gulp-clean'),
   htmlmin = require('gulp-htmlmin'),
 browserSync = require('browser-sync').create();
@@ -72,7 +71,7 @@ gulp.task('vendors-sass', function() {
     .pipe(gulp.dest("build/assets/css"))
     .pipe(browserSync.stream());
 });
-   
+
 // Compile vendor CSS files
 gulp.task('vendors-css', function() {
   return gulp.src([
@@ -87,7 +86,6 @@ gulp.task('vendors-css', function() {
 
 gulp.task('images', function() {
   gulp.src('source/img/*')
-    .pipe(images())
     .pipe(gulp.dest('build/assets/img'));
 });
 
