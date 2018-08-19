@@ -72,7 +72,7 @@ gulp.task('vendors-sass', function() {
     .pipe(gulp.dest("build/assets/css"))
     .pipe(browserSync.stream());
 });
-
+   
 // Compile vendor CSS files
 gulp.task('vendors-css', function() {
   return gulp.src([
