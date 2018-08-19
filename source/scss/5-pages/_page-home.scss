@@ -147,6 +147,9 @@
     font-size: 15px;
     margin-top: 10px;
     padding-left: 5px;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 
     &--title {
       font-size: 20px;
@@ -205,6 +208,9 @@
     color: $text_blurb;
     line-height: 24px;
     text-align: center;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 }
 // information - inf-tab, inf-cont
@@ -214,23 +220,10 @@
   padding: 50px 0 55px;
 
   &__wrapper {
-    height: 350px;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar-track {
-      border-radius: 10px;
-      background-color: transparent;
-    }
-
-    &::-webkit-scrollbar {
-      background-color: transparent;
-      width: 8px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $basic_light_trans;
-      border-radius: 10px;
-    }
+    height: 330px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
   }
 
   &__list {
@@ -238,6 +231,7 @@
     border-bottom: none;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    padding-top: 20px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -250,6 +244,21 @@
   &__content {
     max-width: 90%;
     margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+//scroll - overwrite default plugin's styles
+
+.inf-tab__wrapper {
+  .mCSB_dragger_bar {
+    background-color: $basic_light;
+    width: 13px;
+  }
+
+  .mCSB_draggerRail {
+    background-color: $basic_light_trans;
+    border-radius: 10px;
+    width: 8px;
   }
 }
 // information content
@@ -344,12 +353,25 @@
     margin-right: 10px;
 
     button {
-      img {
-        padding-right: 8px;
-      }
       background: transparent;
       border: none;
-      vertical-align: middle;
+      line-height: 24px;
+
+      img {
+        padding-right: 8px;
+        vertical-align: text-top;
+        width: 32px;
+      }
+    }
+
+    button:active,
+    button:focus,
+    button:hover {
+      color: $dark_blue;
+
+      img {
+        width: 34px;
+      }
     }
   }
 }
@@ -444,8 +466,8 @@
   }
 
   .inf-tab {
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 
     &__el {
       margin: 0 30px;

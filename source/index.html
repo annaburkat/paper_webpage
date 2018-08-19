@@ -5,20 +5,30 @@
   <title>Paper Webpage</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Paper Webpage - We make beautiful papers and books that you'll love to have." />
 
-<!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/vendors-sass.css" />
-  <link href="assets/fonts/slick.ttf">
-  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="assets/css/vendors-css.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
@@ -153,7 +163,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="inf-tab__wrapper">
+          <div class="inf-tab__wrapper" id="js-scroll">
             <!-- information - tabs -->
             <ul class="inf-tab__list nav nav-tabs justify-content-center" id="infTab" role="tablist">
               <li class="inf-tab__el nav-item">
@@ -166,28 +176,19 @@
                 <a class="button-inf" id="privacy-tab" data-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
               </li>
             </ul>
+
             <!-- END information - tabs -->
             <!-- infomation - content -->
             <div class="inf-tab__content inf-cont tab-content" id="infTabContent">
               <div class="inf-cont__box tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                 <div class="inf-cont__content">
-                  <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
-                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
-                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben</p>
-                  <p><span class="inf-cont__number">2. </span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
-                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
-                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
-                    nunc. Phasellus feugiat dapibus viverra.
+                  <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.  Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis biben</p>
+                  <p><span class="inf-cont__number">2. </span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula  lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.  Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
+                  nunc. Phasellus feugiat dapibus viverra.
                   </p>
-                  <p><span class="inf-cont__number">3.</span> Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
-                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
-                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
-                    nunc. Phasellus feugiat dapibus viverra.
+                  <p><span class="inf-cont__number">3.</span> Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula  lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum  nunc. Phasellus feugiat dapibus viverra.
                   </p>
-                  <p><span class="inf-cont__number">4.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
-                    lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.
-                    Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum
-                    nunc. Phasellus feugiat dapibus viverra.</p>
+                  <p><span class="inf-cont__number">4.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula  lacus, malesuada id viverra interdum, vulputate euismod tortor. Mauris suscipit nulla quis purus faucibus, nec lobortis elit laoreet. Nam accumsan sapien varius felis elementum fermentum. Aliquam tempus scelerisque diam ac mattis.Donec ultricies ultrices justo at rhoncus. Morbi a pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra.</p>
                 </div>
               </div>
               <div class="inf-cont__box tab-pane fade show active" id="papers" role="tabpanel" aria-labelledby="papers-tab">
@@ -279,7 +280,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6">
-          <p class="footer__text">&#xa9; 2014 <a class="footer__text--link" href="#">PAPERS</a>. All Rights Reserved.</p>
+          <p class="footer__text footer__text--left">&#xa9; 2014 <a class="footer__text--link" href="#">PAPERS</a>. All Rights Reserved.</p>
         </div>
         <div class="col-12 col-sm-6">
           <p class="footer__text footer__text--right">Designed by FarShore.</p>
@@ -289,7 +290,7 @@
   </footer>
   <!-- END footer -->
 
-  <script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/vendors/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4mk0xIdqi4l47m-chyoIfATpoX-5Kd1Y&callback=initMap"></script>
 </body>
