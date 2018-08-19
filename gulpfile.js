@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer'),
   concat = require('gulp-concat'),
   del = require('del'),
   gulp = require('gulp'),
+  validator = require('gulp-html'),
   minifycss = require('gulp-minify-css'),
   plumber = require('gulp-plumber'),
   sass = require('gulp-sass'),
@@ -25,11 +26,16 @@ var styleSrc = 'source/scss/**/*.scss',
   scriptDest = 'build/assets/js/';
 
 
-
 // --------------------------------------------
 // Stand Alone Tasks
 // --------------------------------------------
 
+// Validate html files
+gulp.task('html', function() {
+  gulp.src('source/*.html')
+    .pipe(validator())
+    .pipe(gulp.dest('build/'));
+});
 
 // Compiles all local SASS files
 gulp.task('sass', function() {
@@ -49,7 +55,9 @@ gulp.task('sass', function() {
 gulp.task('vendors-sass', function() {
   return gulp.src(
       [
-        'node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/slick-carousel/slick/slick.scss', 'node_modules/slick-carousel/slick/slick-theme.scss'
+        'node_modules/bootstrap/scss/bootstrap.scss',
+        'node_modules/slick-carousel/slick/slick.scss',
+        'node_modules/slick-carousel/slick/slick-theme.scss'
       ])
     .pipe(plumber())
     .pipe(sass({
@@ -67,6 +75,11 @@ gulp.task('images', function() {
     .pipe(images())
     .pipe(gulp.dest('build/assets/img'));
 });
+
+// gulp.task('favicon', function() {
+//   gulp.src('source/favicon/*')
+//     .pipe(gulp.dest('build/'));
+// });
 
 gulp.task('font', function() {
   gulp.src('node_modules/slick-carousel/slick/fonts/*')
@@ -115,4 +128,4 @@ gulp.task('watch', function() {
 
 
 // use default task to launch Browsersync and watch JS files
-gulp.task('default', ['sass', 'scripts', 'vendors', 'watch', 'vendors-sass', 'font'], function() {});
+gulp.task('default', ['sass', 'scripts', 'vendors', 'watch', 'vendors-sass', 'font', 'images', 'html'], function() {});
