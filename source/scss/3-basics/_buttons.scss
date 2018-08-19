@@ -34,14 +34,54 @@
   color: #c8c8c8;
   padding-right: 15px;
 
-  &:focus,
-  &:hover,
-  &:active {
-    
+  &--twitter {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $twitter;
+    }
+  }
+
+  &--fb {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $facebook;
+    }
+  }
+
+  &--behance {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $behance;
+    }
+  }
+
+  &--dribbble {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $dribbble;
+    }
+  }
+
+  &--google {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $google;
+    }
+  }
+
+  &--forrst {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $forrst;
+    }
   }
 }
-
-
 @media (min-width: 768px) {
   .button-inf {
     width: 130px;

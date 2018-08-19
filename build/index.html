@@ -5,27 +5,36 @@
   <title>Paper Webpage</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/main.min.css" />
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4mk0xIdqi4l47m-chyoIfATpoX-5Kd1Y&callback=initMap"></script>
 
+<!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/vendors-sass.css" />
+  <link href="assets/fonts/slick.ttf">
+  <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
 
 <body>
+  <!-- header -->
   <header class="header">
+    <!-- main menu -->
     <nav class="header__nav menu navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand menu__logo" href="#">
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo.png" alt="Logo Paper Webpage">
         </a>
-
         <button class="menu__hamburger hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="hamburger__icon navbar-toggler-icon">
             <i class="fas fa-bars"></i>
           </span>
         </button>
-
         <div class="menu__list collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="menu__el nav-item active">
@@ -52,6 +61,8 @@
         </div>
       </div>
     </nav>
+    <!-- END main menu -->
+    <!-- hero -->
     <div class="header__hero hero">
       <div class="container">
         <div class="row">
@@ -60,12 +71,14 @@
             <a class="hero__link" href="#">see our papers</a>
           </div>
           <div class="col-12">
-            <img class="hero__img" src="assets/img/pen.png" alt="">
+            <img class="hero__img" src="assets/img/pen.png" alt="Fountain Pen and flowers">
           </div>
         </div>
       </div>
     </div>
+    <!-- END hero -->
   </header>
+  <!-- END header -->
 
   <!-- Section blurb -->
   <section class="blurb">
@@ -73,26 +86,25 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="blurb__content">
-            <h3 class="blurb__title"><i class="fas fa-heart"></i> Fun Papers</h3>
+            <h2 class="blurb__title"><i class="fas fa-palette"></i> Fun Papers</h2>
             <p class="blurb__desc">Voluptatema accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. totam rem aperiam, eaque ipsa quae.</p>
           </div>
-          <h3></h3>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="blurb__content">
-            <h3 class="blurb__title"><i class="fas fa-comments"></i> Talk Papers</h3>
+            <h2 class="blurb__title"><i class="fas fa-comments"></i> Talk Papers</h2>
             <p class="blurb__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="blurb__content">
-            <h3 class="blurb__title"><i class="fas fa-heart"></i>Creative Papers</h3>
+            <h2 class="blurb__title"><i class="fas fa-heart"></i> Creative Papers</h2>
             <p class="blurb__desc">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="blurb__content">
-            <h3 class="blurb__title"><i class="fas fa-heart"></i> Bussines Papers</h3>
+            <h2 class="blurb__title"><i class="fas fa-briefcase"></i> Bussines Papers</h2>
             <p class="blurb__desc">Voluptatema accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
           </div>
         </div>
@@ -101,49 +113,40 @@
   </section>
   <!-- END Section blurb -->
 
-
   <!-- Section slider  -->
-  <!-- <section class="slider">
+  <section class="slider">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/img/slider_1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="assets/img/slider_2.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <div class="">
-                  <p>CZEŚĆ</p>
-                  <img class="d-block w-100" src="assets/img/slider_3.png" alt="Third slide">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="assets/img/slider_3.png" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h3 class="slider__title">Featured work.</h3>
+        </div>
+        <div class="col-12 col-md-10">
+          <!-- slider slick -->
+          <div class="slider__wrapper" id="slider">
+            <div><img class="img-fluid" src="assets/img/slider_1.png" alt=""></div>
+            <div><img class="img-fluid" src="assets/img/slider_2.png" alt=""></div>
+            <div><img class="img-fluid" src="assets/img/slider_3.png" alt=""></div>
+            <div><img class="img-fluid" src="assets/img/slider_4.png" alt=""></div>
+          </div>
+          <!-- END   slider slick -->
+        </div>
+        <div class="col-12 col-md-10">
+          <div class="slider__content-text">
+            <h4 class="slider__text slider__text--title">Drawing papers</h4>
+            <span class="slider__text slider__text--font">watercolors drawings, pen papers...
+            </span>
+            <a class="slider__link" href="#">
+              <img src="assets/img/arrow_right_text.png" alt="arrow">
+               View more details
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <p class="slider__text slider__text--color">watercolors drawings, pen papers... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisl est, pellentesque nec lectus non, venenatis elementum Sed sed au Nullam nisl est, pellentesque nec lectus non, Nullam nisl est, pellentesque
+              nec lectus non.</p>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-  <!-- END Section slider
+  </section>
+  <!-- END Section slider -->
 
   <!--  Section information -->
   <section class="inf-tab">
@@ -151,8 +154,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="inf-tab__wrapper">
-
-            <ul class="inf-tab__list nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <!-- information - tabs -->
+            <ul class="inf-tab__list nav nav-tabs justify-content-center" id="infTab" role="tablist">
               <li class="inf-tab__el nav-item">
                 <a class="button-inf" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
               </li>
@@ -163,8 +166,9 @@
                 <a class="button-inf" id="privacy-tab" data-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
               </li>
             </ul>
-
-            <div class="inf-tab__content inf-cont tab-content" id="myTabContent">
+            <!-- END information - tabs -->
+            <!-- infomation - content -->
+            <div class="inf-tab__content inf-cont tab-content" id="infTabContent">
               <div class="inf-cont__box tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                 <div class="inf-cont__content">
                   <p><span class="inf-cont__number">1.</span>Quisque et laoreet tellus. Morbi ut lorem interdum, mollis lectus eget, blandit tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ligula
@@ -200,7 +204,7 @@
                   pharetra nulla, sit amet laoreet nisl. Ut sollicitudin felis sed augue sodales aliquet. Sed semper leo nec iaculis dapibus. Maecenas justo magna, varius at magna vel, facilisis bibendum nunc. Phasellus feugiat dapibus viverra.</p>
               </div>
             </div>
-
+            <!-- END    infomation  - content -->
           </div>
         </div>
       </div>
@@ -213,23 +217,23 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-xl-8">
-          <h4 class="contact__title">Get in touch.</h4>
+          <h3 class="contact__title">Get in touch.</h3>
           <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam elit, posuere eget tincidunt aliquam, sodales quis neque. Sed dignissim quam libero, ut tempus justo lacinia vel. Proin eget ipsum vitae tellus hendrerit varius eu at velit. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec augue ac libero commodo venenatis eget eu lorem. Aenean non congue quam. Nam massa felis, tincidunt eget elit sed.</p>
         </div>
         <div class="col-12 col-md-10 col-xl-8">
-          <form class="contact__form form">
+          <form class="contact__form form" id="js-form_contact" action="#" method="post">
             <div class="form-row">
               <div class="col-12 col-md-6">
-                <input type="text" class="form__input form-control" placeholder="Name">
+                <input type="text" class="form__input form-control" placeholder="Name" name="name">
               </div>
               <div class="col-12 col-md-6">
-                <input type="email" class="form__input form-control" placeholder="Email">
+                <input type="email" class="form__input form-control" placeholder="Email" name="email">
               </div>
             </div>
             <div class="form-row">
               <div class="col">
-                <textarea class="form__textarea form-control" placeholder="Message"></textarea>
+                <textarea class="form__textarea form-control" placeholder="Message" name="message"></textarea>
               </div>
             </div>
             <div class="form-row">
@@ -255,7 +259,7 @@
               <div class="col-12 col-sm-4">
                 <div class="form__submit">
                   <button class="btn" type="submit">
-                    <img src="assets/img/send_icon.png" alt="">
+                    <img src="assets/img/send_icon.png" alt="envelope icon">
                    Send message</button>
                 </div>
               </div>
@@ -264,41 +268,30 @@
         </div>
       </div>
     </div>
-    <div class="contact__map" id="map"></div>
-    <!-- <script type="text/javascript">
-      var map;
-
-      function initMap() {
-        console.log('dsds');
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {
-            lat: -34.397,
-            lng: 150.644
-          },
-          zoom: 8
-        });
-      };
-    </script> -->
+    <!-- map by google maps -->
+    <div class="contact__map" id="js-map"></div>
+    <!-- END map by google maps -->
   </section>
   <!-- END Section contact -->
 
+  <!-- footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <p class="footer__text footer__text--link">&#xa9; 2014 <a href="#">PAPERS</a>. All Rights Reserved.</p>
+        <div class="col-12 col-sm-6">
+          <p class="footer__text">&#xa9; 2014 <a class="footer__text--link" href="#">PAPERS</a>. All Rights Reserved.</p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
           <p class="footer__text footer__text--right">Designed by FarShore.</p>
         </div>
       </div>
     </div>
-
   </footer>
+  <!-- END footer -->
 
   <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4mk0xIdqi4l47m-chyoIfATpoX-5Kd1Y&callback=initMap"></script>
 </body>
 
 </html>
